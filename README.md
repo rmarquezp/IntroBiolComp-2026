@@ -1,2 +1,2 @@
-# IntroBiolComp-2026
-Repository for the 2026 version of the course "Introduction to Biological Computation" (BIOL 2214) at Virginia Tech.
+# BIOL 2214: Introduction to Biological Computation - Fall 2026 - Virginia Tech
+Welcome! In this repository you will find all the materials needed for this course. You will also upload your work 
