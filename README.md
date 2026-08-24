@@ -15,3 +15,6 @@ There are many emulators of a UNIX shell for Windows. I recommend installing `Gi
 
 ### Chrome
 A UNIX terminal can be accessed on Chrome through its "Linux development environment", also known as Crostini. Crostini is usually not active by default. You can find instructions on how to do so [here](https://chromeos.dev/en/linux/setup).
+
+### Once you're done
+Please make sure that your terminal works by opening it, typing `git --version`, and hitting the `ENTER` key. Information on the version of a program called git installed on your computer should appear.
