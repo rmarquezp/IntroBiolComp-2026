@@ -14,4 +14,4 @@ A UNIX terminal is already installed on Macs. You can find it in the <i>Applicat
 There are many emulators of a UNIX shell for Windows. I recommend installing `GitBash`, which is part of `Git`, a version control software that we will be using throughout the course. You can find an installer [here] (https://git-scm.com/install/windows). If possible use the latest installer. 
 
 ### Chrome
-A UNIX terminal can be accessed on Chrome through its "Linux development environment", also known as Crostini. Crostini is usually not active by default. You can find instructions on how to do so [here](https://chromeos.dev/en/linux/setup).
+A UNIX terminal can be accessed on Chrome through its "Linux development environment", also known as Crostini. Crostini is usually not active by default. You can find instructions on how to do so [here] (https://chromeos.dev/en/linux/setup).
