@@ -43,10 +43,7 @@ do this is to use the $\uparrow$ and $\downarrow$ keys. All the commands
 you enter into the terminal are saved in a file on your computer, from
 which you can retreive them. The name and location of this file wil vary
 depending on your operating system. For example, on Ubuntu Linux
-machines, this file is
-[`~`(~){.uri}`/.bash_history`, and
-on OSX it is
-[`~`(~){.uri}`/.zsh_history`. We
+machines, this file is `~/.bash_history`, and on OSX it is `~/.zsh_history`. We
 can use this files to, for example, look at the last five commands that
 were entered:
 
@@ -78,15 +75,13 @@ can hit `tab` twice to see them.
 Finally, there are several shortcuts to to navigate along commands.
 Below is a non-extensive list of shortcuts that you may find useful.
 
-  ---------- -----------------------------------------------------------------------------------
-  `Ctrl+a`   Move the cursor to the beginning of the line.
-  `Ctrl+e`   Move the cursor to the end of the line.
-  `Ctrl+l`   Clear the screen (except for the command being typed.
-  `Ctrl+c`   Kill the command that is currently running. Useful when commands get stuck.
-  `Ctrl+l`   Clear the screen (except for the command being typed).
-  `Ctrl+k`   Delete all characters after the cursor.
+  `Ctrl+a`   Move the cursor to the beginning of the line.<br>
+  `Ctrl+e`   Move the cursor to the end of the line.<br>
+  `Ctrl+l`   Clear the screen (except for the command being typed.<br>
+  `Ctrl+c`   Kill the command that is currently running. Useful when commands get stuck.<br>
+  `Ctrl+l`   Clear the screen (except for the command being typed).<br>
+  `Ctrl+k`   Delete all characters after the cursor.<br>
   `Ctrl+d`   Delete the character directly under the cursor. If no characters, exit the shell.
-  ---------- -----------------------------------------------------------------------------------
 
 Incorporating these shortcuts will make you much more efficient at
 typing on the terminal. You may want to keep this list handy when you're
