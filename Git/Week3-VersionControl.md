@@ -612,7 +612,7 @@ get an idea of how it works, go to your newly created GitHub repository,
 click the "Add file\" button, and select "create new file\". Name it
 `test.md`. Now type the following into the text box
 
-``` bash
+```
     # This is a big heading
     This is some normal text. 
     ## This is a smaller heading
