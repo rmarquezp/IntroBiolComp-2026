@@ -1,4 +1,4 @@
-#Unix 2: Advanced Commands and Scripting
+# Unix 2: Advanced Commands and Scripting
 ## Refresher
 
 Last week we covered how `UNIX` commands are run in general, and how
