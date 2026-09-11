@@ -1,4 +1,5 @@
-# Refresher
+#Unix 2: Advanced Commands and Scripting
+## Refresher
 
 Last week we covered how `UNIX` commands are run in general, and how
 they can be used to perform basic tasks from the command line. In
@@ -26,7 +27,7 @@ Lets do a couple of quick exercises to bring ourselves back to speed.
 3.  How many folders and files are there in the `Unix` directory? Which
     ones have been updated since last class?
 
-# UNIX tips and tircks
+## UNIX tips and tircks
 
 Now that we've been using the command line for some time, you may
 appreciate the need for tools to save time and avoid mistakes while
@@ -35,7 +36,7 @@ available on UNIX (and other languages) that can make interacting with
 the terminal much easier. We will cover some of the min ones below, but
 some web research will reveal many more.
 
-## Command history
+### Command history
 
 Most command line prompts allow you to see previous commands that you
 have entered, and not have to retype them every time. The easiest way to
@@ -62,7 +63,7 @@ talk more about variables later). The command
 Produces the same output as the previous command. Linux and Windows (via
 `GitBash`) both have this set, but OSX unfortunately doesn't.
 
-## Keyboard Shortcuts
+### Keyboard Shortcuts
 
 Similar to using the upo/down arrows to see ur command history, we can
 use other keyboard shortcuts as we type. Another key shortcut is using
@@ -87,7 +88,7 @@ Incorporating these shortcuts will make you much more efficient at
 typing on the terminal. You may want to keep this list handy when you're
 working on the terminal.
 
-## Wildcards
+### Wildcards
 
 Wildcards are characters that serve as placeholders for other
 characters. They can be very useful when we want to refer to multiple
@@ -111,11 +112,11 @@ look at some examples
 `n1.txt, n2.txt, n3.txt, ..., n59.txt`. Count the number of lines of
 files `n10.txt to n19.txt`.
 
-# More complex commands
+## More complex commands
 
-## More advanced text file handling
+### More advanced text file handling
 
-### Finding things with `grep`
+#### Finding things with `grep`
 
 The `grep` function is a powerful
 tool to find lines within files that contain a particular pattern, which
@@ -195,7 +196,7 @@ matching case-insensitive (ie. searches match both lower and upper case
 strings), and `-r` which allows you
 to search across all files in a directory.
 
-### Extracting columns with `cut`
+#### Extracting columns with `cut`
 
 It is common for biological data to be saved in tabular format (i.e. as
 a table with rows and columns). The simplest formats to save tabular
@@ -395,7 +396,7 @@ lines in the file except the first one (which contains the header).
     479
 ```
 
-# Scripting in Bash
+## Scripting in Bash
 
 As we add more commands to our pipeline, it becomes convenient to put it
 in a *script*. Scripts are lists of commands that are executed one after
@@ -405,7 +406,7 @@ allows us to automate tasks in a replicable way. We will spend the
 majority of this class learning how to write scripts that execute
 particular algorithms efficiently and correctly.
 
-## A note on text editors
+### A note on text editors
 
 A key part of writing computer programs is the software in which we do
 the actual writing. Nowadays most coding is done through Integrated
@@ -433,7 +434,7 @@ need to install one. Below are suggestions for each operating system.
 **If you don't have an appropriate text editor installed in your
 computer please install one now**.
 
-## Writing a script
+### Writing a script
 
 To illustrate how scripts work, we will turn the pipeline from section
 3.1.3 into a script. The first step is to create a new file. You can do
@@ -590,7 +591,7 @@ temporary files that will immediately be deleted. These files, however,
 may be helpful for code *debugging*. In the end, writing good code is a
 balance between efficiency and readability.
 
-## For loops
+### For loops
 
 Being able to repeat the same task many times with slight variations can
 be incredibly useful. For example, we may want to use the same script to
@@ -678,9 +679,9 @@ are several other kinds, such as `while`, and `until`, which run
 will dig deeper into these and other iterative procedures later in the
 course using `Python` and `R`.
 
-# Final Problems
+## Final Problems
 
-## What does this command line do
+### What does this command line do
 
 1.  `man pwd`
 
@@ -692,7 +693,7 @@ course using `Python` and `R`.
 
 5.  `mv file.txt newfilename.txt`
 
-## Fasta files
+### Fasta files
 
 DNA sequences are often save in a format called FASTA. These files
 contain sequence data in text format. Each sequence segment is preceded
@@ -722,7 +723,7 @@ possible gene), and the isotig status.
 6.  Which contig has the highest number of reads (numreads)? How many
     reads does it have?
 
-## Semicolon-delimited to comma-delimited
+### Semicolon-delimited to comma-delimited
 
 It is common for table files to be distributed in comma-delimited format
 (as we saw above), but some software outputs semicolon-delimited tables.

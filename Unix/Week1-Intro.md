@@ -1,4 +1,5 @@
-# Hello World!
+# Unix 1: Introduction
+## Hello World!
 
 Today we will start using the UNIX *command line*, often called a
 *shell*. In brief terms, a command line is an interphase where you can
@@ -19,9 +20,9 @@ phrase `"Hello world"` as an
 argument to `echo`. This asked the
 computer to print the phrase in quotes.
 
-# Running commands on the Shell
+## Running commands on the Shell
 
-## Commands, arguments, and options
+### Commands, arguments, and options
 
 Lets explore the use of commands further. A command is basically a
 program that executes a particular task, often based on user inputs.
@@ -68,7 +69,7 @@ you understand what it does when you come back to it in the future. I
 encourage you to use as many comments as you need to make sure your code
 is understandable.
 
-## Getting help
+### Getting help
 
 We've established it is impossible (and terribly impractical) to
 remember all commands and programs we need, let alone their arguments
@@ -85,7 +86,7 @@ Linux, Mac, and Chromebook machines. GitBash on Windows does not support
 `cal` command to print calendars
 for July through October of 2026.
 
-# Files and directories
+## Files and directories
 
 As a scientist, you will often need to create, use, and store files, for
 example containing data, lab or field notes, manuscripts, etc\...
@@ -93,7 +94,7 @@ Computers organize these files in folders, also known as directories,
 which can contain files, or other directories. Lets look at how we can
 navigate the directory system.
 
-## Navigating the directory system
+### Navigating the directory system
 
 The directory system of a computer is organized in a hierarchical way,
 where directories can contain files, as well as other directories,
@@ -207,7 +208,7 @@ repository.
 
 4.  Navigate to `sandbox` within `Unix`.
 
-## Handling files and directories
+### Handling files and directories
 
 In addition to navigating around, we can also move, create, delete, and
 otherwise manipulate files and directories from the command line. We
@@ -282,7 +283,7 @@ remove SomeFile.txt? n
 # Confirm deletion typing y (yes), cancel with n (no).
 ```
 
-## Processing text files
+### Processing text files
 
 UNIX systems are quite powerful for handling text files. This is pretty
 convenient, considering most biological data, from DNA sequences to
@@ -368,9 +369,9 @@ directory.
 
 4.  What is the last codon reported in this file?
 
-# Final Problems
+## Final Problems
 
-## What does this command line do?
+### What does this command line do?
 
 1.  `man pwd`
 
@@ -378,7 +379,7 @@ directory.
 
 3.  `mkdir -p /test1/test2/test3`
 
-## Turkey transcripts
+### Turkey transcripts
 
 Locate the file called `M.gallopavo_GCF_905368555.1_transcripts.fa` in
 the `Unix/ DataFiles` directory, which contains a few thousand coding
@@ -404,7 +405,7 @@ code you used.
 
 **Hint:** You can use the `mv` command to do this.
 
-## Clean up the sandbox!
+### Clean up the sandbox!
 
 Perform the tasks below and report the code you used.
 
