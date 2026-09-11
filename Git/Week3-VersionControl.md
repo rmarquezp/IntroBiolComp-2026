@@ -1,4 +1,6 @@
-# What is version control and why use it?
+# Version Control
+
+## What is version control and why use it?
 
 You have surely worked on a project that involves multiple file
 versions. These can be different drafts of an essay or manuscript,
@@ -16,7 +18,7 @@ merge their progress into a single file. Even if it may seem like
 overkill at first, the use of version control systems is among the most
 prominent "good habits\" recommended by veteran software developers.
 
-# `git` and GitHub
+## `git` and GitHub
 
 We will use `git` throughout this course. Originally developed to
 support the development of the Linux operating system, this version
@@ -28,9 +30,9 @@ servers* (i.e."the cloud\"). We will be using
 very popular choice to host repositories among biologists and other
 scientists.
 
-## Basic `git`
+### Basic `git`
 
-### Setup
+#### Setup
 
 If you've attended the previous two lectures you should already have
 `git` installed in your machine, and have used it to download files from
@@ -61,7 +63,7 @@ If you want to see all your settings and available options type
     $ git config --list
 ```
 
-### Getting help
+#### Getting help
 
 In addition to the now familiar
 `man git` way of getting help,
@@ -74,7 +76,7 @@ available on the course's Canvas page. In this class we will barely
 scratch the surface of `git` functionalities, so these resources will be
 useful if you want to learn more.
 
-### Basic workflow
+#### Basic workflow
 
 Incorporating `git` into your working routine involves a very basic
 workflow. Once you have created a repository and worked on your files to
@@ -203,7 +205,6 @@ at this point we have only one commit. Lets continue writing our Hokie
 chant.
 
 ``` bash
-``` {upquote="true"}
 # Add second stanza
 $ echo 'Tech Tech V.P.I!' >> OldHokie.txt
 
@@ -213,7 +214,7 @@ ONE, TWO! ONE, TWO!
 Hokie Hokie Hokie Hy
 Tech Tech V.P.I!
 ```
-```
+
 
 If we check our repository status, we will see that this file has been
 changed, but these changes haven't been *staged* to be committed. If we
@@ -247,11 +248,10 @@ can add the relevant files to the commit with
 If we look at the commit history, we can see there are now two commits.
 
 ``` bash
-``` {upquote="true"}
 # Add second stanza
 $ git log
 ```
-```
+
 
 **Exercises:**
 
@@ -273,7 +273,6 @@ the end of \"V.P.I\". Fix that on a tex editor and save the file. Once
 you're done type
 
 ``` bash
-``` {upquote="true"}
 # Add second stanza
 $ git diff
 diff --git a/OldHokie.txt b/OldHokie.txt
@@ -286,7 +285,7 @@ index 5f00bda..1e09bab 100644
 -Tech Tech V.P.I!
 +Tech Tech V.P.I.!
 ```
-```
+
 
 The last two lines show that the line `Tech Tech V.P.I!` was deleted,
 indicated by "$-$\", and the line `Tech Tech V.P.I.!` was added, as
@@ -317,13 +316,13 @@ changes is using `git rm` and
     $ git mv oldfile.txt newfile.txt
 ```
 
-## Troubleshooting
+### Troubleshooting
 
 Even if the cases above may seem straightforward, there will be plenty
 of cases where you want to change, undo or otherwise deal with mistakes
 that you've made. Below are a few ways in which you can do so.
 
-### Amending a commit
+#### Amending a commit
 
 A classic mistake with version control is realizing you missed something
 right after you commit changes. You may have forgotten to add a
@@ -358,7 +357,7 @@ Bear in mind that when you amend a commit, textttgit will overwrite the
 previous commit, so you can't go back to the \"unamended\" version of
 the commit.
 
-### Unstaging a file
+#### Unstaging a file
 
 Another common mistake is to add a file th a snapshot that you did not
 intend to. This can be easily fixed using
@@ -370,7 +369,7 @@ intend to. This can be easily fixed using
     # Commit and update the message
 ```
 
-### Reverting to a previous commit
+#### Reverting to a previous commit
 
 Messups **will** happen. Sometimes they are bad enough that we may want
 to travel back to a time before we made those changes. If the changes
@@ -384,7 +383,7 @@ version of your file using
 Use this command with caution. Once you checkout a file any changes you
 made will be lost.
 
-# Remote repositories on GitHib
+## Remote repositories on GitHib
 
 You now know how to run a version-controlled repository on your local
 computer. However, to really take advantage of the benefits of version
@@ -396,7 +395,7 @@ multipel users to contribute to the same repository.
 We will now set up a remote repository on GitHub, and learn how to work
 with it from the terminal.
 
-## Setup
+### Setup
 
 Our first step is to setup a GitHub account that you can access from the
 terminal in your computer. If you already have an account you are
@@ -500,14 +499,14 @@ established, and asking if you want to continue. Type
 everything work you should get a message saying you successfully
 authenticated (but GitHub doesn't provide shell access).
 
-## Creating a new repository
+### Creating a new repository
 
 To create a remote repository we must do two things. We must create the
 repository, and link it with a local repository on our machine. We will
 now create a repository where you will keep your course files, including
 problem sets and assignments.
 
-### Local repository
+#### Local repository
 
 Lets first create the local version of our repository. First **navigate
 away from our common course repository (`IntroBiolComp-2026`)**.
@@ -550,7 +549,7 @@ Save your file, and add and commit it to the new repository.
 
 Our local repository is ready, lets build the remote version now.
 
-### Remote repository
+#### Remote repository
 
 Go to your GitHub dashboard, and on the left sidebar click on the "New\"
 green button. In the new window that pops up give your repository a
@@ -588,7 +587,7 @@ repository!
 
 3.  Push the file to your remote repository (`add/commit/push`).
 
-# Markdown: Documenting repositories
+## Markdown: Documenting repositories
 
 `git` and most other version control systems are designed to work very
 well with text files, such as scripts, text-based data files (e.g.
@@ -677,7 +676,7 @@ code (for example, the guides for this class!). Whenever you click on a
 markdown (`.md`) file on GitHub, you can toggle between "Preview\" and
 "Code\" tabs.
 
-# Final Problems
+## Final Problems
 
 Now that you know how to use `git` and write markdown files, please
 write your answers in a markdown file hosted in your remote repository.
@@ -691,14 +690,14 @@ asked to write.
 
 On canvas submit a link to your file.
 
-## Markdown homework
+### Markdown homework
 
 Translate your answers to the Week 1 practical to Markdown format, and
 save them in a file called `Lastname_P1.txt`. Synchronize your local and
 remote repositories so the file is in both of them. Report the code you
 used to do so.
 
-## Semicolon-delimited to comma-delimited
+### Semicolon-delimited to comma-delimited
 
 Last class you were asked to write a script that converts table files
 delimited with semicolon (`;`) to
