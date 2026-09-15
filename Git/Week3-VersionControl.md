@@ -690,7 +690,7 @@ asked to write.
 
 On canvas submit a link to your file.
 
-### Markdown homework
+### 1. Markdown homework
 
 Translate your answers to the Week 1 practical to Markdown format, and
 save them in a file called `Lastname_P1.md`. Synchronize your local and
@@ -698,7 +698,7 @@ remote repositories so the file is in both of them.
 
 Report the code you used to do so.
 
-### Semicolon-delimited to comma-delimited
+### 2. Semicolon-delimited to comma-delimited
 
 Last class you were asked to write a script that converts table files
 delimited with semicolon (`;`) to
