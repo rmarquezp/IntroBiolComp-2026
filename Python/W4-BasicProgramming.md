@@ -1,6 +1,4 @@
-# Programming in Python: The Basics
-
-## What is programming? Why learn it?
+# What is programming? Why learn it?
 
 Put simply, programming is giving a computer a series of instructions
 for it to execute in a particular order. The nature of these
@@ -22,7 +20,7 @@ As Allesina & Wilmes put it "If you organize your data and code
 properly, and you automate the whole pipeline, anybody (anywhere) will
 be able to reproduce your findings exactly.\"
 
-## Why Python?
+# Why Python?
 
 There are many programming languages, which have often been developed to
 address specific problems. We have already learned `Unix`, and you may
@@ -50,9 +48,9 @@ both languages have very active development communities in biology and
 adjacent fields, so they have both grown to cover an enormous variety of
 tasks.
 
-## Getting started in Python
+# Getting started in Python
 
-### Getting help
+## Getting help
 
 As with every other section of this course, learning Python in detail
 would require multiple semesters of hard work. Our goal is to get well
@@ -64,13 +62,13 @@ specific command, you can use the
 `help("my_command")` command to
 access a help page similar to a `man` page in Unix.
 
-### Running Python
+## Running Python
 
 Python can be run in two main ways, similar to bash scripts. If you type
 `python` into the terminal a Python *interpreter* will launch, where you
 can enter code line by line, similar to a shell.
 
-``` bash
+``` python
     # Launch Python interpreter
     $ python
     Python 3.12.2 (main, Feb 16 2024, 20:50:58) [GCC 12.3.0] on linux
@@ -81,7 +79,7 @@ can enter code line by line, similar to a shell.
 ```
 
 **Note:** The Python prompt is different from your command line prompt,
-so I will signal which is being used on code boxes (Python: `>>>`, bash:
+so I will signal which is being used on code boxes (Puthon: `>>>`, bash:
 `$`).
 
 Alternatively, you can write your code on a text document, and run it
@@ -90,7 +88,7 @@ script with a *shebang* that tells the computer where to find the
 software to interpret our script (Python in this case). For instance, if
 we create a file named `hello.py` with the following content
 
-``` bash
+``` python
     #!/usr/bin/env python3
 
     print("Hello world")
@@ -98,7 +96,7 @@ we create a file named `hello.py` with the following content
 
 We can run it from the terminal
 
-``` bash
+``` python
     $ python hello.py
     Hello world
 ```
@@ -117,7 +115,7 @@ that can run in one go from the terminal.
 **Exercise:** The following code lets you know things about a set of
 numbers.
 
-``` bash
+``` python
     message = '' # make an empty variable
     for x in [1, 2, 3, 4, 5]:
         if x > 4:
@@ -134,7 +132,7 @@ numbers.
 
 2.  Can you tell what is this code doing?
 
-### Python versions
+## Python versions
 
 Most pieces of software are built and changed over time, so they have
 multiple versions. Between Python version 2 and 3, enough changes were
@@ -142,13 +140,13 @@ made where these two versions are not *back-compatible*. We will be
 using Python 3 in this class. However, because a lot of software was
 developed in Python 2 over the years some computers still have it.
 Please make sure that you are running version 3 by typing
-`python –version` on the terminal.
+`python --version` on the terminal.
 If you get version `3.x.x` (where
 `x` can be any number) you have an appropriate version. Otherwise please
 follow the installation instructions posted on the course GitHub in the
 `Python` directory.
 
-### Jupyter notebooks
+## Jupyter notebooks
 
 A great way to run Python in interactive mode (i.e. line by line) are
 `Jupyter` notebooks, which run Python on your web browser, and allow you
@@ -172,13 +170,13 @@ duplicate, and delete existing ones.
 **Exercise:** Open a Jupyter notebook and run code that prints "Hello
 world\" to the screen.
 
-### Basic operations
+## Basic operations
 
 To get familiar with Jupyter notebooks and python syntax lets try a few
 simple operations For example, we can do all basic math operations (e.g.
 addition, substraction, etc\...)
 
-``` bash
+``` python
     >>> 1 + 4 - 3 # addition and substraction
         2
     >>> 2 * 4 # multiplication
@@ -195,7 +193,7 @@ addition, substraction, etc\...)
 
 Python respects "order of operations\" conventions. For example
 
-``` bash
+``` python
     >>> 2 + 3 * 2 # multiply first
         8
     >>> 2 + (3 * 2) # multiply first
@@ -207,7 +205,7 @@ Python respects "order of operations\" conventions. For example
 We can also use logical operators, which return *Boolean* values (i.e.
 true or false)
 
-``` bash
+``` python
     >>> 4 > 1
         True
     >>> 2 + 2 == 5 # "is equal to" opeartor
@@ -220,12 +218,12 @@ Note how we use a *double* equals sign (==) to test for equality. This
 is because a single equals sign (=) is used to assign variables, as we
 will see in the next section.
 
-### Variables
+## Variables
 
 A key part of programming is assigning and manipulating variables. On
 Python, this is acheived using the equals (=) sign.
 
-``` bash
+``` python
     >>> x = 5 #assign 5 to variable x
     >>> x # output the value of x
         5
@@ -234,14 +232,14 @@ Python, this is acheived using the equals (=) sign.
 If we want to list the variables currently defined in out environment we
 can use
 
-``` bash
+``` python
     >>> who
         x 
 ```
 
 Once we have defined variables, we can use them to perform operations.
 
-``` bash
+``` python
     >>> x * 4
         20
     >>> y = 8
@@ -249,7 +247,7 @@ Once we have defined variables, we can use them to perform operations.
         40
 ```
 
-## Data Types and Structures
+# Data Types and Structures
 
 Each variable contains data of a certain type, which determines the
 types of operations that can be done using that variable. For example, a
@@ -260,19 +258,19 @@ type/structure works and what it can be used for is key to write
 efficient programs. We can know the type of a variable using the command
 `type([my_var])`
 
-### Singular data types
+## Singular data types
 
 We have already encountered the simplest data types: those which
 represent single pieces of data stored in their own variable, such as
 one number of one string of characters.
 
-#### Numbers
+### Numbers
 
 Single numbers can be stored as two closely related data types: integers
 and floating point numbers. The difference between them is that integers
 are whole numbers, while floating point numbers can have decimal places.
 
-``` bash
+``` python
     >>> count = 4 # integer
     >>> type(count)
         int
@@ -287,7 +285,7 @@ are whole numbers, while floating point numbers can have decimal places.
 There are many built-in functions in Python that can be applied to
 numerical variables. For example
 
-``` bash
+``` python
     >>> abs(-3.14) # absolute value
     3.14
     >>> pow(3, 6) # 3^6
@@ -301,13 +299,13 @@ the command name for it, the Python documentation and/or web searching
 should produce good answers. If the function does not exist, you can
 always create your own, as we will learn next week.
 
-#### Booleans
+### Booleans
 
 Boolean variables can take two values: True or False. These variables
 behave similarly to integers, in that the value "True\" takes a value of
 1 and "False\" of 0.
 
-``` bash
+``` python
     >>> Open = True # note the capital T
     >>> type(Open)
         bool
@@ -318,7 +316,7 @@ behave similarly to integers, in that the value "True\" takes a value of
         2
 ```
 
-#### Strings
+### Strings
 
 Strings are groups of characters grouped in some order (such as words).
 Biological data can often be nicely represented as strings, for instance
@@ -328,7 +326,7 @@ type in some more detail.
 
 To assign a string we need to surround it with quotation marks.
 
-``` bash
+``` python
     >>> seq = "GACTTAGACTYA"
     >>> type(seq)
         str
@@ -336,7 +334,7 @@ To assign a string we need to surround it with quotation marks.
 
 We can perform all sorts of operations with our string. For example:
 
-``` bash
+``` python
     >>> print(seq) # print the string
         GACTTAGACTYA
     >>> print("The sequence is", seq) # print two strings together
@@ -351,7 +349,7 @@ specific variable in addition ot the data. These can be seen as
 character. For example, if we wanted to count the number of `G`
 nucleotides in our sequence we could use
 
-``` bash
+``` python
     >>> seq.count("G")
         2   # G is present 4 times.
 ```
@@ -365,7 +363,7 @@ message (e.g. `help(seq.count)`).
 
 Additional methods for strings are, for instance
 
-``` bash
+``` python
     >>> seq.replace("T", "U") # Replace T for U
         'GACUUAGACUYA'
     >>> seq.find("C") # position of first "C"
@@ -381,7 +379,7 @@ Additional methods for strings are, for instance
 
 We can also perform opearations involving multiple strings.
 
-``` bash
+``` python
     # Concatenate (i.e. join) three strings
     >>> promoter = "TATAAA"
     >>> upstream = "TAGCTA"
@@ -413,7 +411,7 @@ object-specific methods that are invoked using ".\" (e.g.
 
 4.  Replace "WHEN\" with "When\".
 
-### Data structures
+## Data structures
 
 It is very frequently the case that we need to organize datasets more
 complex than a single number or string of characters. Python allows us
@@ -421,14 +419,14 @@ to store such data in variables called *data structures*, which can be
 easily accessed and manipulated. We will cover some of the most commonly
 used data structures in biology.
 
-#### Lists
+### Lists
 
 Lists store *ordered* collections of data that are *indexed*. This means
 that each element of a list is assigned a unique identifier (an index),
 based on its position on the list. To define a list, we can enclose its
 values in square brackets, and separate them with commas.
 
-``` bash
+``` python
     >>> my_list = ["TATAAA", 4, 0.3333, True]
 ```
 
@@ -439,7 +437,7 @@ like many other computer languages, Python is *zero-indexed*. This means
 it starts indexing at 0, so the first element on the list is element
 number 0.
 
-``` bash
+``` python
     >>> my_list[2]
         0.3333
     >>> my_list[0]
@@ -451,7 +449,7 @@ colon (":\") operator. Ranges are specified as `[from:to]`, with the
 last value not included. For example, if we wanted elements 2 to 4 we
 would specify `[2:5]`.
 
-``` bash
+``` python
     >>> my_list[0:2] # elements 0 and 1
         ['TATAAA', 4]
     >>> my_list[2:] # elements from 2 to the end
@@ -464,7 +462,7 @@ If we want to index from the end of the list, we can use negative index
 positions. Because 0 is already taken to mark the first position,
 negative indexing starts with the last position being -1.
 
-``` bash
+``` python
     >>> my_list[-1] # last element
         True
     >>> my_list[-2:] # last two elements
@@ -474,7 +472,7 @@ negative indexing starts with the last position being -1.
 In addition to just accessing elements of a list, we can use indexes to
 update list values.
 
-``` bash
+``` python
     >>> my_list
         ['TATAAA', 4., 0.3333, True]  
     >>> my_list[3] = False  # update item 3 to False.
@@ -484,7 +482,7 @@ update list values.
 
 Or delete specific values.
 
-``` bash
+``` python
     >>> my_list
         ['TATAAA', 4., 0.3333, True]
     >>> del(my_list[2:4]
@@ -497,7 +495,7 @@ means that the object is edited permanently. If we wanted to obtain a
 new list with some elements removed we could create a copy of our list
 using the `.copy()` and then edit it in place.
 
-``` bash
+``` python
     >>> short_list = my_list # create new list
     >>> del(short_list[2:4])
     >>> my_list
@@ -512,7 +510,7 @@ single element that is *iterable* (i.e. that has some sort of structure
 that can be subset into single pieces), and converts it to a list. THis
 is a useful approach to, for example, convert a string into a list.
 
-``` bash
+``` python
     >>> gene = "ATGACCCCGTTTTCTGCTCTACAATCAGGCATCAATATCACA"
     >>> type(gene)
         str
@@ -524,7 +522,7 @@ is a useful approach to, for example, convert a string into a list.
 There are several useful built-in methods that can be applied to lists.
 Some are demonstrated below:
 
-``` bash
+``` python
     # Append an element to the end of a list
     >>> my_list.append("yellow")
     >>> my_list
@@ -552,7 +550,7 @@ Some are demonstrated below:
         [2.01, 1.99, 1.41, 1.37, 1.27, 1.06, 0.99, 0.91]
 ```
 
-#### Tuples
+### Tuples
 
 As we have just seen, lists can be edited extensively. These functions
 are very useful, but can also lead to problems if data is edited
@@ -566,7 +564,7 @@ is called a *Tupple*, and is created using parentheses instead of square
 brackets, or using the `tuple()`
 function.
 
-``` bash
+``` python
     >>> patients = ("Id445","Id445","Id32","Id1482","Id174","Id972",)
     >>> type(patients)
         tuple
@@ -583,7 +581,7 @@ function.
 
 Two methods are available for tuples:
 
-``` bash
+``` python
     # Count occurrences of a particular element 
     >>> patients.count("Id445")
         2
@@ -593,7 +591,7 @@ Two methods are available for tuples:
         4
 ```
 
-#### Dictionaries
+### Dictionaries
 
 Dictionaries are similar to lists, but instead of being indexed in
 order, the are *unordered*, and indexed by names, called *keys*. This is
@@ -605,7 +603,7 @@ keys and values with a colon, and separating key:value pairs with
 commas.Similar to lists, dictionaries can be made up of different object
 types.
 
-``` bash
+``` python
     # Create dictionary with multiple data types
     >>> my_dictionary = {"a": "test", "b": 3.14, "c": [1, 2, 3], "d":True}
     >>> my_dictionary
@@ -659,7 +657,7 @@ same key multiple times, the last one that was input will be saved. As
 with other data types/structures, there are several methods we can use
 with dictionaries.
 
-``` bash
+``` python
     # Get the value for a specific key and print out a preser value if not present
     >>> cases.get("Blacksburg", "NA")
         39
@@ -698,14 +696,14 @@ with dictionaries.
 
 6.  Add the element `"d": "-.."`.
 
-## More built-in functions
+# More built-in functions
 
 Now that we have covered more complex data types, lets look at some more
 common built-in functions that can be used to do operations on them.
 
 We can do basic numerical operations on lists of numbers.
 
-``` bash
+``` python
     # Create a list
     >>> a = [5, 6, 7, 7, 7, 8, 9, 9]
     # Maxumim value 
@@ -723,7 +721,7 @@ We can do basic numerical operations on lists of numbers.
 
 We can apply some of the same operations to lists of strings
 
-``` bash
+``` python
     # Create b list
     >>> b = ["Computational", "Biology","BIOL 2214"]
     # Maxumim value in lexicographical order 
@@ -743,7 +741,7 @@ We can apply some of the same operations to lists of strings
 We can use the `join()` method to join the values of a list of strings
 into a single string
 
-``` bash
+``` python
     >>> seq = ["A","C","T","G"]
 
     # Join strings with dash as a delimiter 
@@ -757,7 +755,7 @@ into a single string
 
 We can also ask if a specific value is in a string using `in`.
 
-``` bash
+``` python
     >>> class = "BIOL 2214 Computational Biology" 
     >>> "B" in class
         True
@@ -774,41 +772,41 @@ We can also ask if a specific value is in a string using `in`.
         True
 ```
 
-## Final Problems
+# Final Problems
 
 Answer the following questions in Markdown format within a folder in
 your GitHub repository (e.g. `Practicals/W4/`. Add any scripts and other
 files you create to the folder as well.
 
-### About you
+## About you
 
 Create a script in a text editor and name it `about_me.py`. Remember to
 use a shebang in the first line (`#!/usr/bin/env python3`).
 
--   Define variables that contain your name, favorite color, favorite
-    activity, and favorite animal. Feel free to pick any data
-    types/structures that you think would work.
+- Define variables that contain your name, favorite color, favorite
+  activity, and favorite animal. Feel free to pick any data
+  types/structures that you think would work.
 
--   Add code to print out your name and favorite color, activity, and
-    animal **using the variables you declared above**. Remember
-    `print()` can print out multiple strings, separated by commas. The
-    output should be:
+- Add code to print out your name and favorite color, activity, and
+  animal **using the variables you declared above**. Remember `print()`
+  can print out multiple strings, separated by commas. The output should
+  be:
 
-    ``` bash
-        My name: Roberto
-         My favorite color: Blue
-         My favorite activity: Coding
-         My favorite animal: Poison frogs
-    ```
+  ``` python
+      My name: Roberto
+       My favorite color: Blue
+       My favorite activity: Coding
+       My favorite animal: Poison frogs
+  ```
 
--   Save your file and run it from the terminal to produce the output
-    above.
+- Save your file and run it from the terminal to produce the output
+  above.
 
--   In your answer include the contents of your script, a general
-    explanation of what your script does, and comments to explain each
-    step.
+- In your answer include the contents of your script, a general
+  explanation of what your script does, and comments to explain each
+  step.
 
-### Codon to amino acid
+## Codon to amino acid
 
 The file `IntroBiolComp-2026/Python/DataFiles/CodonTable.tsv` contains a
 table with the standard genetic code, which translates from DNA codon to
@@ -817,18 +815,16 @@ sequence of codons to amino acids. You can write this script as a
 standalone text file, or on a Jupyter notebook. Remember to add as many
 explanations as you think are necessary for me to understand.
 
--   Create a dictionary with the `Codon` column as keys and `Symbol`
-    column as values.
+- Create a dictionary with the `Codon` column as keys and `Symbol`
+  column as values.
 
--   Create a string with the following sequence as input (including
-    spaces)
-    `"CTA GGA GTG ATT TCG"`.
+- Create a string with the following sequence as input (including
+  spaces) `"CTA GGA GTG ATT TCG"`.
 
--   Add code to split the string above into three-letter strings (i.e.
-    codons).
+- Add code to split the string above into three-letter strings (i.e.
+  codons).
 
--   Add code that uses your dictionary to match each codon to its
-    corresponding amino acid, and saves the amino acid sequence as a
-    list.
+- Add code that uses your dictionary to match each codon to its
+  corresponding amino acid, and saves the amino acid sequence as a list.
 
--   Print the amino acid sequence to the screen.
+- Print the amino acid sequence to the screen.
