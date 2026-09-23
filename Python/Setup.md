@@ -1,4 +1,4 @@
-# Setup for Python sections
+# Setup for Python sessions
 
 It is possible that your computer already has Python installed. In fact, some operating systems come with multiple copies on Python that are used for different purposes. To make sure things work similarly for everyone, we recommend installing Python through the `conda` package manager, which is a relatively platform-independent way to manage python and its packages (as well as a lot of other software). We will also install a program called `Jupyter` which allows us to run Python from a web browser and annotate our code directly using Markdown.
 
