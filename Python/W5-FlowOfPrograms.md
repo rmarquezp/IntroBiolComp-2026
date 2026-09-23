@@ -74,7 +74,7 @@ particular statements if a condition is made, and a different set of
 statements if it is not. For example, we can ask Python to tell us if a
 number is divisible by 2:
 
-``` bash
+``` python
     x = 4
 
     if x % 2 == 0
@@ -103,7 +103,7 @@ divisible by 2, nothing will be output. We can use an
 program what to do if the condition set in the `if` statement isn't
 true.
 
-``` bash
+``` python
     x = 4
 
     if x % 2 == 0
@@ -120,7 +120,7 @@ If it is, the relevant code block is executed, and subsequent
 `elif`/`else` statements are ignored. We can add an `else` statement at
 the end to cover the case where none of the conditions are true.
 
-``` bash
+``` python
     x = 17
 
     if x % 2 == 0:
@@ -141,7 +141,7 @@ determines their order of priority as they are evaluated.
 
 **Exercise:** Run the following code
 
-``` bash
+``` python
     x = 14
 
     if x % 2 == 0:
@@ -175,7 +175,7 @@ condition is met. They are each useful in different situations.
 string, a list, a tuple, or the keys or values of a dictionary, among
 others. They are run as follows
 
-``` bash
+``` python
     # Print all elements of a list
     for i in [1, 4, "hello", False]:
         print(i)
@@ -198,7 +198,7 @@ Python starts counting at 0, the last value (`"to"`) is not included in
 the output. If `"from"` and `"step"` aren't specified, they default to 0
 and 1, respectively.
 
-``` bash
+``` python
     # Numbers from 1 to 10 (non inclussive) in steps of 1
     >>> list(range(0, 10, 1))
         [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -218,7 +218,7 @@ and 1, respectively.
 
 `range` can be used in `for` loops as follows
 
-``` bash
+``` python
     # Print the cube of all values between 0-9
     for i in range(10):
         print(i, i ** 3, sep="\t")
@@ -232,7 +232,7 @@ separated by a `TAB` character, specified as \"`\``t`\".
 `while` loops will run as long as a condition is met. For example, the
 code below sets `i = 0`, and prints `i` as long as it is less than 5.
 
-``` bash
+``` python
     i = 0
     while i < 5:
       print(i)
@@ -246,7 +246,7 @@ must update the initial conditions in a way that eventually stops
 fulfilling the loop's conditional, and breaks the loop. In our simple
 case above, we can increase `i` by 1 every cycle.
 
-``` bash
+``` python
     i = 0
     while i < 5:
       print(i)
@@ -260,7 +260,7 @@ code to run until a specific event happens. For example, we can use them
 to find the solution of a particular problem by running until the
 solution is found. For instance
 
-``` bash
+``` python
     # Find the first integer >= 1200 divisible by 19 
 
     # Set variables
@@ -280,7 +280,7 @@ Note that if the condition for a loop to run is that a boolean variable
 is, we don't need to specify this. The loop above could also be written
 as
 
-``` bash
+``` python
     # Find the first integer >= 1200 divisible by 19 
 
     # Set variables
@@ -304,7 +304,7 @@ executed and continues to lines of code after the loop. `cotinue`
 terminates the current iteration of the loop, and proceeds with the next
 iteration. For instance, we could rewrite the loop above as
 
-``` bash
+``` python
     # Find the first integer >= 1200 divisible by 19 
 
     # Set variables
@@ -324,7 +324,7 @@ condition to `False`.
 
 Similarly, we can use `continue` to find the first 100 even numbers
 
-``` bash
+``` python
     # List the first 100 even numbers
     x = 0 # Starting number
     found = 0 # Keeps track of number of elements found
@@ -348,7 +348,7 @@ the elements and indices of a list or string using the
 `enumerate()` function, which
 creates a list of tuples containing index-value pairs.
 
-``` bash
+``` python
     # Create list from DNA sequence. One base per index.
     seq="GATGCTAGTGCTAGCTA"
 
@@ -369,7 +369,7 @@ length 2.
 dealing with dictionaries, we can use the `.items()` method in a similar
 way to access the key-value pairs.
 
-``` bash
+``` python
     z = {0: "a", 1: "b", 2: "c"}
 
     for (key, val) in z.items():
@@ -382,7 +382,7 @@ the same function to all elements of a list in a very compact way. For
 instance, we can get the square of every element of a numeric list in
 just one line of code:
 
-``` bash
+``` python
     # Create list
     a = [1, 2, 5, 14, 42, 132]
 
@@ -395,18 +395,18 @@ a number of times. Based on the code of each one, try to determine how
 many times \"hello\" will be printed each time *before* running the
 code.
 
-1.  ``` bash
+1.  ``` python
         for i in range(3, 17):
             print("hello")
     ```
 
-2.  ``` bash
+2.  ``` python
         for j in range(12):
             if j % 3 == 0:
             print("hello")
     ```
 
-3.  ``` bash
+3.  ``` python
         for j in range(15):
             if j % 5 == 3:
                 print("hello")
@@ -414,21 +414,21 @@ code.
                 print("hello")
     ```
 
-4.  ``` bash
+4.  ``` python
         z = 0
         while z != 15:
             print("hello")
             z = z + 3
     ```
 
-5.  ``` bash
+5.  ``` python
         for i in range(10):
             if i > 5:
                 break
             print("hello")
     ```
 
-6.  ``` bash
+6.  ``` python
         z = 0
         while z < 25:
             z = z + 1
@@ -447,7 +447,7 @@ opening a *connection* to a file, which is called a *file handle*. We
 can then use this connection to read from or write to the file. To
 create a conntection we use the `open` command.
 
-``` bash
+``` python
     f = open("some_seqs.txt", "r")
 ```
 
@@ -460,7 +460,7 @@ the connection to our file.
 Similar to other objects, there are several methods that can be used for
 a file handle. For example
 
-``` bash
+``` python
     # Get file name
     f.name
 
@@ -471,7 +471,7 @@ a file handle. For example
 We can also use methods to read from the file. For example, we can print
 all of its contents.
 
-``` bash
+``` python
     # Print all file contents
     print(f.read())
 ```
@@ -479,7 +479,7 @@ all of its contents.
 Once you're done reading (or writing), you need to close the connection
 to the file
 
-``` bash
+``` python
     # Print all file contents
     f.close()
 ```
@@ -489,7 +489,7 @@ such as overwriting files, or other programs being unable to open our
 file. To avoid this, it is advisable to use the `with` command to open
 files.
 
-``` bash
+``` python
     with open("./some_seqs_test.txt", "r") as f:
         print(f.readline())
 ```
@@ -500,7 +500,7 @@ it, and the closes the file. Note that in the command above we used the
 you call it it reads the next line in the file. We can use a similar
 approach to loop through lines of a file and perform some operation.
 
-``` bash
+``` python
     # Print each line in the file
     with open("./some_seqs_test.txt", "r") as f:
         for ln in f:
@@ -513,7 +513,7 @@ printed. Since the file also has a new line then a blank space is
 created. We can use the `.rstrip()` method to remove the new line
 characters.
 
-``` bash
+``` python
     # Print each line in the file
     with open("./some_seqs_test.txt", "r") as f:
         for ln in f:
@@ -526,7 +526,7 @@ want to save a file as a data structure to perform further operations on
 it. We can use a similar approach as above to read a file into a
 dictionary.
 
-``` bash
+``` python
     # Create empty dictionary to be populated 
     genes = {}
 
@@ -544,7 +544,7 @@ dictionary.
 we can also use `open()` to create new files that we can write into.
 Just like above, there are multiple methods to write into files.
 
-``` bash
+``` python
     with open("myfile.txt", "w") as f:
         f.write("Some stuff\n")  # Write some stuff, add \n to go to a new line
         f.writelines(["ln 2\n", "ln 3\n", "ln 4\n"]) # Write several lines at once
@@ -566,7 +566,7 @@ an operation with each line, and write the outputs to a new file. Using
 our file that has gene names and sequences each in one line, lets
 calculate the GC content and output it to a new file.
 
-``` bash
+``` python
     with open("some_seqs_test.txt","r") as infile, open("gc_content.txt", "w") as outfile:
       for line in infile:
         line = line.rstrip()  # Remove newlines
