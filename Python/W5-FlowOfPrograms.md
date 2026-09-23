@@ -462,10 +462,10 @@ a file handle. For example
 
 ``` bash
     # Get file name
-    f.name()
+    f.name
 
     # Nature of the file handle (read, write, append).
-    f.mode()
+    f.mode
 ```
 
 We can also use methods to read from the file. For example, we can print
