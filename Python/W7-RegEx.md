@@ -739,7 +739,7 @@ document** within a folder in your GitHub repository (e.g.
 `Practicals/W7/`. Add any scripts and other files you create to the
 folder as well.
 
-### A Map of Science (A & W 5.9.2)
+### A Map of Science (A & W 5.9.2) 
 
 Where does science come from? This question has fascinated researchers
 for decades, and has even led to the birth of the field of the "science
