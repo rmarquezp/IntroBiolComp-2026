@@ -12,14 +12,14 @@ Gesquiere et al. (2011) measured hormone levels in the blood of baboons. Every i
 - **C.** Write a script that takes the file name and the individual ID and returns the number of times that individual was sampled. Paste your script in a code box with your answer (and explain what it does). Also include the script itself. You can use `Unix` or `python` for this.
 - **D.** Write a script that returns a delimited table (e.g. comma-separated or tab-separated) with the number of times each individual was sampled, and saves it as `Num_samples.csv`. The beginning of your file should look similar to this:
 
-```
-maleID	Num_samples
-1 	 805
-2 	 457
-3 	 408
-4 	 471
-...
-```
+    ```
+    maleID	Num_samples
+    1 	 805
+    2 	 457
+    3 	 408
+    4 	 471
+    ...
+    ```
 
 ## 2. Mining The Origin of Species (5pt)
 For many decades, it was commonly accepted among evolutionary biologists that, even if Darwin's *On the Origin of Species by Means of Natural Selection* did a good job laying out his ideas on evolution by natural selection, it failed to address the question in the title (how do new species form?). In this exercise you will mine the entire text of *The Origin* to evaluate if this is the case. 
@@ -28,6 +28,7 @@ For many decades, it was commonly accepted among evolutionary biologists that, e
 - **B.** The current view on the origin of new species is that *reproductive isolation* plays a key role. How many times are the words "sterility" and "isolation" mentioned in the book? **Hint:** don't forget to make your search case-insensitive.
 - **C.** To get a better idea of the *context* in which Darwin mentioned these words, search for the 3 lines before and after each occurrence of the key words in point B, and save your results to a text file. Save one file for each key word. 
 - **D.** A good way to explore broad patterns of word usage is a diagram called a [word cloud](https://en.wikipedia.org/wiki/Tag_cloud) (also known as a tag cloud).
+
     Use `Conda` to install a program called [wordcloud](https://anaconda.org/channels/conda-forge/packages/wordcloud/overview), and follow the instructions for command-line usage of this tool, available in the developers' [GitHub](https://github.com/amueller/word_cloud?ref=itsfoss.com#command-line-usage) to generate one word cloud for "sterility" and one for "isolation". Include them in your markdown document. Images can be included in a markdown document as follows. 
     ```
     Below is an image
