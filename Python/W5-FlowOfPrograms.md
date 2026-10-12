@@ -599,7 +599,23 @@ description.
 to teach children about division. Players take turns counting upwards
 from one, replacing any numbers divisible by 3 with the word *fizz*, and
 any numbers divisible by 5 with *buzz*. Numbers divisible by both are
-replaced with *fissbuzz*. In this exercise you will recreate this game
+replaced with *fissbuzz*. 
+
+The output for the first 10 numbers is
+```
+1
+2
+fizz
+4
+buzz
+fizz
+7
+8
+fizz
+buzz
+```
+
+In this exercise you will recreate this game
 using Python.
 
 1.  Write an algorithm to play *fizz buzz* using pseudocode. Be as
