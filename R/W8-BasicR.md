@@ -77,7 +77,7 @@ terminal.
 
 We can run it from the terminal
 
-``` R
+``` bash
     $ Rscript hello.R
     [1] "Hello world, the squared root of 2 is"
     [1] 1.414214
