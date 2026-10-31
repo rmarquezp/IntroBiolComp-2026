@@ -1072,7 +1072,7 @@ $\texttt{A}_{2}\texttt{A}_{2}$ alleles.
     `H938_Euro_chr6.geno`.
 
 4.  On average, how many individuals are heterozygous (i.e.
-    $\texttt{A}_{1}\texttt{A}_{2}$) at sites associated with disease
+    $A_{1}A_{2}$) at sites associated with disease
     risk? On sites not associated with disease risk?
 
 ### Data cleanup
