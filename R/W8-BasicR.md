@@ -1054,8 +1054,8 @@ over 40,000 people of European descent at many sites across Chromosome
 6. The first three columns contain information about the genomic
 position of each site, and the alleles present in the population, and
 the last three contain the number of individuals exhibiting
-$\texttt{A}_{1}\texttt{A}_{1}$, $\texttt{A}_{1}\texttt{A}_{2}$, and
-$\texttt{A}_{2}\texttt{A}_{2}$ alleles.
+$A_{1}A_1$, $A_{1}A_{2}$, and
+$A_{2}A_{2}$ alleles.
 
 1.  How many people were sampled in total? The total number of genotypes
     at each site gives us the total number of people sequenced, but not
