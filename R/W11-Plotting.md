@@ -166,7 +166,7 @@ number from 0-26, each corresponding to a different symbol (Fig. 1).
 
 <figure id="pch" data-latex-placement="ht">
 <img src="pch.png" width="400"/>
-<figcaption>Figure 1. Plotting symbols available through the <code>pch</code> argument</figcaption>
+<figcaption><b>Figure 1.</b> Plotting symbols available through the <code>pch</code> argument</figcaption>
 </figure>
 
 
