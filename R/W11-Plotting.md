@@ -165,12 +165,12 @@ Plotting symbols are set with the
 number from 0-26, each corresponding to a different symbol (Fig. 1).
 
 <figure id="pch" data-latex-placement="ht">
-<img src="pch.png" />
+<img src="pch.png" width="400"/>
 <figcaption>Figure 1. Plotting symbols available through the <code>pch</code> argument</figcaption>
 </figure>
 
 
-The color of plotting symbols is controlled with the
+<br/>The color of plotting symbols is controlled with the
 `col` argument. In most cases, this
 controls the color of the entire symbol. However, symbols 21-25 allow
 for different border and background (i.e. fill) colors, controled with
