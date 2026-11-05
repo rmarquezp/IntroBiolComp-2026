@@ -162,15 +162,19 @@ those symbols.
 
 Plotting symbols are set with the
 `pch` argument, which takes a
-number from 0-26, each corresponding to a different symbol (Fig
-[1](#pch){reference-type="ref" reference="pch"}).
+number from 0-26, each corresponding to a different symbol (Fig. 1).
 
 <figure id="pch" data-latex-placement="!ht">
 <div class="centering">
-<embed src="pch.pdf" style="width:8cm" />
+<embed src="pch.png" style="width:8cm" />
 </div>
-<figcaption>Plotting symbols available through the <code>pch</code>
+<figcaption>Figure 1. Plotting symbols available through the <code>pch</code>
 argument</figcaption>
+</figure>
+
+<figure data-latex-placement="ht">
+<img src="../Images/directory_structure.png" />
+<figcaption>Example directory structure of a Linux system.</figcaption>
 </figure>
 
 The color of plotting symbols is controlled with the
